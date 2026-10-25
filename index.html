@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Task Board</h1>
+<div class="card">
+  <h2>Add a task</h2>
+  <form id="taskForm">
+    <div class="row">
+      <div style="flex:3"><label>Title *</label><input name="title" required maxlength="120" placeholder="e.g. Finish cloud assignment"></div>
+      <div><label>Priority</label><select name="priority"><option>Low</option><option selected>Medium</option><option>High</option></select></div>
+      <div><label>Due date</label><input type="date" name="due_date"></div>
+    </div>
+    <label>Description</label><input name="description" maxlength="500" placeholder="Optional details">
+    <p><button class="btn" type="submit">Add Task</button> <span id="msg" class="muted"></span></p>
+  </form>
+</div>
+<div class="card row noprint">
+  <div><label>Filter by priority</label><select id="fPriority"><option value="">All</option><option>High</option><option>Medium</option><option>Low</option></select></div>
+  <div><label>Search</label><input id="fSearch" placeholder="Search title..."></div>
+  <div id="stats" style="flex:2;display:flex;gap:30px;justify-content:space-around"></div>
+</div>
+<div class="grid g3" id="board">
+  <div class="card"><h2>To Do</h2><div id="col-todo"></div></div>
+  <div class="card"><h2>In Progress</h2><div id="col-doing"></div></div>
+  <div class="card"><h2>Done</h2><div id="col-done"></div></div>
+</div>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='app.js') }}"></script>{% endblock %}

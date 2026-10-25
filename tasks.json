@@ -1,0 +1,7 @@
+[
+ {"title":"Read about IaaS, PaaS and SaaS","description":"Make short notes with one example of each model.","priority":"High","status":"done","due_date":"2026-11-02"},
+ {"title":"Create a free cloud account","description":"Sign up for a free tier (AWS, Azure, GCP or Firebase).","priority":"High","status":"doing","due_date":"2026-11-05"},
+ {"title":"Deploy a Flask app to a cloud host","description":"Try Render, PythonAnywhere or an EC2 free-tier instance.","priority":"Medium","status":"todo","due_date":"2026-11-12"},
+ {"title":"Prepare mini-project report","description":"Architecture diagram, screenshots and conclusion.","priority":"Medium","status":"todo","due_date":"2026-11-20"},
+ {"title":"Revise virtualization topic","description":"Hypervisor types, VMs vs containers.","priority":"Low","status":"todo","due_date":"2026-11-25"}
+]
